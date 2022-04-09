@@ -146,6 +146,29 @@ export const resetSkullList = () => {
         }))
     }
 }
+export const resetAttributeList = () => {
+    return async (dispatch) => {
+        let { gallery } = store.getState()
+        let attributeList = null;
+
+        dispatch(updateState({
+            key: "attributeList",
+            value: attributeList
+        }))
+    }
+}
+
+export const resetSkullsFilterLenght = () => {
+    return async (dispatch) => {
+        let { gallery } = store.getState()
+        let attributeList = null;
+
+        dispatch(updateState({
+            key: "skullsFilterLenght",
+            value: 6666
+        }))
+    }
+}
 
 export const loadSkull= (i) => {
     return async (dispatch) => {

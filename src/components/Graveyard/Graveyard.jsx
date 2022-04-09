@@ -2,7 +2,7 @@
 import React, { useEffect, useState  } from "react";
 import { useDispatch } from "react-redux";
 import store from "../../redux/store";
-import { loadAllSkull, resetSkullList, getEbisusLink, loadFilterSkull,getFilterSkullLenght,getAttributeNew,loadSkull } from "../../redux/gallery/galleryAction";
+import { loadAllSkull, resetSkullList, getEbisusLink, loadFilterSkull,getFilterSkullLenght,getAttributeNew,loadSkull, resetAttributeList,resetSkullsFilterLenght } from "../../redux/gallery/galleryAction";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faFilter } from '@fortawesome/free-solid-svg-icons';
 import './graveyard.css';
@@ -25,7 +25,7 @@ const Graveyard = () => {
 
     let { gallery } = store.getState();
     console.log(gallery);
-    let { skullsList, attributeList, ebisusLink,skullsFilterLenght } = gallery;
+    let { skullsList, attributeList, ebisusLink,skullsFilterLenght=6666 } = gallery;
 
     let [filter, setFilter] = useState([
         { name: 'Background', value: [] },
@@ -47,9 +47,18 @@ const Graveyard = () => {
 
 
     useEffect(() => {
-        dispatch(loadAllSkull(0))
+        dispatch(loadFilterSkull(filter,0))
         dispatch(getAttributeNew())
-
+        console.log(skullsList,attributeList,filter)
+        return () => {
+            skullsList=null;
+            attributeList=null;
+            dispatch(resetSkullList())
+            dispatch(resetAttributeList())
+            filter = null;
+            setFilter(null);
+            dispatch(resetSkullsFilterLenght());
+          };
     }, [])
 
 
@@ -86,7 +95,6 @@ const Graveyard = () => {
     function loadSkullFilter() {
         dispatch(resetSkullList());
         dispatch(getFilterSkullLenght(filter))
-        console.log(skullsFilterLenght);
         if(checkVoidFilter())
         {
             dispatch(loadAllSkull(0))
