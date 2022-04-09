@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/skeleton-hand.ed73eddb.cur"
   },
   {
-    "revision": "9d02150e3e42ad3aa5af9f22c3d81771",
+    "revision": "77e7037f9839f342a628d4b935385ad8",
     "url": "/CroSkullSite/index.html"
   }
 ];
