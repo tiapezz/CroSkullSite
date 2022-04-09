@@ -1,14 +1,11 @@
-import { ethers } from 'ethers';
-import React, { useEffect, useState, useRef  } from "react";
+
+import React, { useEffect, useState  } from "react";
 import { useDispatch } from "react-redux";
 import store from "../../redux/store";
-import { loadAllSkull, getAttribute,resetSkullList, getEbisusLink, loadFilterSkull,getFilterSkullLenght,getAttributeNew,loadSkull } from "../../redux/gallery/galleryAction";
+import { loadAllSkull, resetSkullList, getEbisusLink, loadFilterSkull,getFilterSkullLenght,getAttributeNew,loadSkull } from "../../redux/gallery/galleryAction";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDungeon, faFilter, faM, faStore } from '@fortawesome/free-solid-svg-icons';
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import {  faFilter } from '@fortawesome/free-solid-svg-icons';
 import './graveyard.css';
-import { sendNotification } from '../../redux/data/dataActions';
-import {loadingGif} from './loading.gif';
 import bgIcon from './Icon/bg.png';
 import bodyIcon from './Icon/body.png';
 import noseIcon from './Icon/nose.png';
@@ -16,10 +13,9 @@ import skullIcon from './Icon/skull.png';
 import eyesIcon from './Icon/eyes.png';
 import hatIcon from './Icon/hat.png';
 import numberIcon from './Icon/number.png';
-import ebisusIcon from './Icon/ebisus-icon.png';
 import logoIcon from './Icon/logo-icon.png';
 import searchIcon from './Icon/search.png';
-import { faAngleUp, faAngleDown, faPortrait, faStoreAlt, faPlus, faMinus,faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import {  faPortrait, faStoreAlt, faPlus, faMinus,faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import AttributeMap from '../AttributeMap/AttributeMap';
 
 const ipfsUri480 = "https://croskull.mypinata.cloud/ipfs/QmWu9bKunKbv8Kkq8wEWGpCaW47oMBbH6ep4ZWBzAxHtgj/"
@@ -27,13 +23,10 @@ const ipfsUri = 'https://ipfs.io/ipfs/QmZA9idEBomqsYBvA9ZH5JzuirmyQ414UBaqBGaEk2
 const Graveyard = () => {
     let dispatch = useDispatch();
 
-    let { blockchain, gallery } = store.getState()
-    let { accountAddress, contractDetected } = blockchain;
-    let { skullsList, attributeList, ebisusLink,skullsFilterLenght=6666 } = gallery;
+    let { gallery } = store.getState();
+    console.log(gallery);
+    let { skullsList, attributeList, ebisusLink,skullsFilterLenght } = gallery;
 
-    const [viewInventory, toggleInventory] = useState(false)
-    const [hasData, toggleData] = useState(false)
-    let [sort, setSort] = useState(0);
     let [filter, setFilter] = useState([
         { name: 'Background', value: [] },
         { name: 'Skull', value: [] },
@@ -56,11 +49,7 @@ const Graveyard = () => {
     useEffect(() => {
         dispatch(loadAllSkull(0))
         dispatch(getAttributeNew())
-        toggleData(true)
-        return() =>{
-            skullsList = null;
-            attributeList = null;
-        }
+
     }, [])
 
 
@@ -78,15 +67,7 @@ const Graveyard = () => {
         setSkullModal(false);
     }
 
-    function selectSort(event) {
-        const select = document.getElementById('sortBy');
-        let value = select.selectedIndex;
-        sort = value;
-        setSort(value);
 
-        loadSkullFilter();
-
-    }
 
     const setFilterAngleState = (i) => {
         let ids = [...angleIconFilter];
@@ -193,7 +174,6 @@ const Graveyard = () => {
     }
 
     function clear() {
-        sort=0;
         filter.map((f)=>{
             f.value =[];
         })
