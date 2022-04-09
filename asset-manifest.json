@@ -1,9 +1,9 @@
 {
-  "main.css": "/CroSkullSite/static/css/main.c5135a9f.chunk.css",
-  "main.js": "/CroSkullSite/static/js/main.54c3d380.chunk.js",
-  "main.js.map": "/CroSkullSite/static/js/main.54c3d380.chunk.js.map",
-  "static/js/1.e8ee1108.chunk.js": "/CroSkullSite/static/js/1.e8ee1108.chunk.js",
-  "static/js/1.e8ee1108.chunk.js.map": "/CroSkullSite/static/js/1.e8ee1108.chunk.js.map",
+  "main.css": "/CroSkullSite/static/css/main.b4afe68d.chunk.css",
+  "main.js": "/CroSkullSite/static/js/main.2ed10e18.chunk.js",
+  "main.js.map": "/CroSkullSite/static/js/main.2ed10e18.chunk.js.map",
+  "static/js/1.7765967c.chunk.js": "/CroSkullSite/static/js/1.7765967c.chunk.js",
+  "static/js/1.7765967c.chunk.js.map": "/CroSkullSite/static/js/1.7765967c.chunk.js.map",
   "runtime~main.js": "/CroSkullSite/static/js/runtime~main.b48f67ea.js",
   "runtime~main.js.map": "/CroSkullSite/static/js/runtime~main.b48f67ea.js.map",
   "static/media/bg.png": "/CroSkullSite/static/media/bg.69110cf8.png",
@@ -15,8 +15,8 @@
   "static/media/logo-icon.png": "/CroSkullSite/static/media/logo-icon.b0d2b699.png",
   "static/media/search.png": "/CroSkullSite/static/media/search.b5a134cf.png",
   "static/media/App.css": "/CroSkullSite/static/media/skeleton-hand.ed73eddb.cur",
-  "static/css/main.c5135a9f.chunk.css.map": "/CroSkullSite/static/css/main.c5135a9f.chunk.css.map",
+  "static/css/main.b4afe68d.chunk.css.map": "/CroSkullSite/static/css/main.b4afe68d.chunk.css.map",
   "index.html": "/CroSkullSite/index.html",
-  "precache-manifest.afd96878ab0e8fd540f5a62ef9acec96.js": "/CroSkullSite/precache-manifest.afd96878ab0e8fd540f5a62ef9acec96.js",
+  "precache-manifest.504ad9846e6a4ee2f71ab69830612bac.js": "/CroSkullSite/precache-manifest.504ad9846e6a4ee2f71ab69830612bac.js",
   "service-worker.js": "/CroSkullSite/service-worker.js"
 }

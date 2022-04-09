@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "54c3d380fa05b69e55fb",
-    "url": "/CroSkullSite/static/css/main.c5135a9f.chunk.css"
+    "revision": "2ed10e18ad84473e72f1",
+    "url": "/CroSkullSite/static/css/main.b4afe68d.chunk.css"
   },
   {
-    "revision": "54c3d380fa05b69e55fb",
-    "url": "/CroSkullSite/static/js/main.54c3d380.chunk.js"
+    "revision": "2ed10e18ad84473e72f1",
+    "url": "/CroSkullSite/static/js/main.2ed10e18.chunk.js"
   },
   {
-    "revision": "e8ee11085eff7a0835d3",
-    "url": "/CroSkullSite/static/js/1.e8ee1108.chunk.js"
+    "revision": "7765967c4eccfaefbe4c",
+    "url": "/CroSkullSite/static/js/1.7765967c.chunk.js"
   },
   {
     "revision": "b48f67ea0ac83f2dceb6",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/skeleton-hand.ed73eddb.cur"
   },
   {
-    "revision": "369735facc7253c249f374617cc636a9",
+    "revision": "89d4260d2c886f154dd9099f594610c6",
     "url": "/CroSkullSite/index.html"
   }
 ];
