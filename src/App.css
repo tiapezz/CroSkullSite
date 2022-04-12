@@ -16,6 +16,8 @@
 }
 body {
   cursor: url(./images/skeleton-hand.cur) !important;
+  overflow: hidden;
+
 }
 input {
   background-color: var(--violet);
@@ -31,13 +33,11 @@ input {
 b, strong {
   font-weight: 700;
 }
-.main {
 
-}
 .loading {
   animation: infinite rotate 3s;
 }
-.container-fluid{
+.container-fluid2{
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -49,8 +49,10 @@ b, strong {
   background-size: cover;
   width: 100vw !important;
   max-height: 100vh;
-  height: 100vh;
+  height: 92.5vh;
   overflow-x: clip;
+  justify-content: center;
+  padding-top: 2%;
 }
 .footer{
   grid-area: footer;
@@ -85,126 +87,7 @@ span, div, p, code {
   width: 100%;
   column-gap: 6px;
 }
-.card.selected{
-  border: 3px solid #f5e04c;
-}
-.card{
-  position: relative;
-  overflow: hidden;
-  overflow: hidden;
-  z-index: 10;
-  border-radius: 5% / 3.5%;
-  box-shadow: 
-    -5px -5px 5px -5px var(--color1), 
-    5px 5px 5px -5px var(--color2), 
-    -7px -7px 10px -5px transparent, 
-    7px 7px 10px -5px transparent, 
-    0 0 5px 0px rgba(255,255,255,0),
-    0 55px 35px -20px rgba(0, 0, 0, 0.5);
-  
-  transition: transform 0.5s ease, box-shadow 0.2s ease;
-  will-change: transform, filter;
-  background-color: #040712;
-  background-image: var(--front);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  transform-origin: center;
-}
 
-.card:hover {
-  box-shadow: 
-    -20px -20px 30px -25px var(--color1), 
-    20px 20px 30px -25px var(--color2), 
-    -7px -7px 10px -5px var(--color1), 
-    7px 7px 10px -5px var(--color2), 
-    0 0 13px 4px rgba(255,255,255,0.3),
-    0 55px 35px -20px rgba(0, 0, 0, 0.5);
-}
-
-.card:before,
-.card:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-repeat: no-repeat;
-  opacity: .5;
-  mix-blend-mode: color-dodge;
-  transition: all .33s ease;
-}
-
-.card:before {
-  background-position: 50% 50%;
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-    115deg,
-    transparent 0%,
-    var(--color1) 25%,
-    transparent 47%,
-    transparent 53%,
-    var(--color2) 75%,
-    transparent 100%
-  );
-  opacity: .5;
-  filter: brightness(.5) contrast(1);
-  z-index: 1;
-}
-
-.card:after {
-  opacity: 1;
-  background-image: url("https://assets.codepen.io/13471/sparkles.gif"), 
-    url(https://assets.codepen.io/13471/holo.png), 
-    linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
-  background-position: 50% 50%;
-  background-size: 160%;
-  background-blend-mode: overlay;
-  z-index: 2;
-  filter: brightness(1) contrast(1);
-  transition: all .33s ease;
-  mix-blend-mode: color-dodge;
-  opacity: .75;
-}
-
-.card.active:after,
-.card:hover:after {
-  filter: brightness(1) contrast(1);;
-  opacity: 1;
-}
-
-.card.active,
-.card:hover {
-  animation: none;
-  transition: box-shadow 0.1s ease-out;
-}
-
-.card.active:before,
-.card:hover:before {
-  animation: none;
-  background-image: linear-gradient(
-    110deg,
-    transparent 25%,
-    #efb2fb
-    48%,
-    #acc6f8 52%,
-    transparent 75%
-  );
-  background-position: 50% 50%;
-  background-size: 250% 250%;
-  opacity: .88;
-  filter: brightness(.66) contrast(1.33);
-  transition: none;
-}
-
-.card.active:before,
-.card:hover:before,
-.card.active:after,
-.card:hover:after {
-  animation: none;
-  transition: none;
-}
 
 .sk-column{
   flex-direction: column;
@@ -796,4 +679,23 @@ span.metric-usd-value {
   75% {
     transform: rotate(359deg);
 	}
+}
+
+
+/*new css */
+.home{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  grid-area: section;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-height: 100vh;
+  height: 92.5vh;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom,#1B3A76, #0b1424, #0b1424, #0b1424 );
 }

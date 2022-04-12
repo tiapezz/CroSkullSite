@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Headhunter';
+    src: url('./HeadhunterRegular-6Y1x.ttf') format('truetype');
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'Elite';
+    src: url('./special-elite.regular.ttf') format('truetype');
+    font-weight: bold;
+}
+h5:hover{
+    color: aliceblue;
+}
+.btn:hover{
+    color: white !important;
+}
+.home h1{
+    font-size: 5em !important;
+    font-family: 'Headhunter' !important;
+    text-align: center;
+}
+.container-custom{
+    width: 100% !important;
+    max-width: 1268px;
+}
+#header {
+    /*
+    background-image: url(grave.png);
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    */
+}
+#header{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#header img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#header #moon{
+    mix-blend-mode: screen;
+    z-index: 8;
+    animation: moon-an 1s;
+}
+#header #grass{
+    z-index: 9;
+    animation: grass-an 1s;
+}
+#header #grave{
+    z-index: 11;
+    animation: grave-an 1s;
+}
+#header #cloud{
+    animation: cloud-an 1s;
+}
+@keyframes grass-an {
+	0% {
+
+        opacity: 0;
+	}
+	100% {
+
+        opacity: 1;
+	}
+}
+@keyframes grave-an {
+	0% {
+		transform: translateY(100%);
+        opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+        opacity: 1;
+	}
+}
+@keyframes cloud-an {
+	0% {
+		transform: translatex(100%);
+        opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+        opacity: 1;
+	}
+}
+@keyframes moon-an {
+	0% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
+@keyframes button-an {
+	0% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
+.logo-div{
+    z-index: 99;
+    position: relative;
+    font-family: 'Headhunter';
+    display: block;
+    margin: 0 auto;
+}
+#underworld-btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 99;
+    position: relative;
+    font-family: 'Headhunter';
+    display: block;
+    margin: 0 auto;
+    animation: button-an 2s;
+}
+#header #logo{
+width: 30%;
+min-width: 300px;
+height: auto;
+z-index: 12;
+display: block;
+position: relative;
+margin: 0 auto;
+}
+
+.what-is div{
+    margin-top: 5%;
+}
+
+.story-text {
+    font-family: 'Elite' !important;
+    margin: auto !important;
+    font-size: large;
+    text-align: center;
+    
+}
+.story-text h2{
+    font-family: 'Headhunter' !important;
+    text-align: center;
+    font-size: 2em !important;
+}
+
+.story-img {
+    margin: auto !important;
+    text-align: center;
+}
+.story-img img{
+    margin: auto !important;
+    width: 50%;
+}
+.what-we-have{
+    text-align: center;
+    margin: 10% 0 10% 0;
+    font-family: 'Elite';
+}
+.what-we-have h1{
+    font-size: 5em !important;
+    font-family: 'Headhunter' !important;
+}
+.carousel-content{
+    margin-top: 10%;
+}
+.carousel-content h2{
+    font-size: 5em !important;
+    font-family: 'Headhunter' !important;
+}
+.carousel-content p{
+    font-size: 5em !important;
+    font-family: 'Elite' !important;
+}
+.s1{
+    background-image: url(./Slider/tavern.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    height: 50vh;
+}
+.s2{
+    background-image: url(./Slider/bonefire.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    height: 50vh;
+}
+.s3{
+    background-image: url(./Slider/bg-marketplace.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    height: 50vh;
+}
+.s4{
+    background-image: url(./Slider/merchant.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    height: 50vh;
+}
+.s5{
+    background-image: url(./Slider/bg-raffle.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    height: 50vh;
+}
+.s6{
+    background-image: url(./Slider/bg-bank.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    height: 50vh;
+}
+
+.roadmap img{
+    width: 100%;
+    margin: 10% 0 10%;
+}
+.faq{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.faq h1{
+    font-size: 5em !important;
+    font-family: 'Headhunter' !important;
+    text-align: center;
+}
+.faq .card {
+    border: 1px solid white !important;
+}
+.faq .show{
+    border-top: 1px solid white;
+}
+
+.team{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.team h1{
+    font-size: 5em !important;
+    font-family: 'Headhunter' !important;
+    text-align: center;
+}
+@media screen and (max-width: 992px) {
+    
+}

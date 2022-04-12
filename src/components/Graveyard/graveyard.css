@@ -321,7 +321,10 @@ display: none;
 }
 
 .graveyard  .Red{
-  background-color: #F94E4D;
+  background-color: rgba(249, 77, 77, 0.836) ;
+}
+.graveyard  .Red2{
+  background-color: #f86e6e !important ;
 }
 .graveyard .modal-container .modal-desc .attribute-Red{
  background-color: #f86e6e;

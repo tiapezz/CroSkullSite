@@ -7,6 +7,7 @@ import { ethers } from 'ethers';
 import store from "./redux/store";
 
 import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar/Navbar"
 
 import Graveyard from "./components/Graveyard/Graveyard";
 
@@ -40,9 +41,11 @@ class App extends Component {
           <>
             <HashRouter
               basename="/">
+              <Navbar />
               <Route
                 render={({ location }) => (
-                  <TransitionGroup className={`container-fluid ${location.pathname.replace('/', '')}`}>
+                  <TransitionGroup className={location.pathname != '/' ? `container-fluid2 ${location.pathname.replace('/', '')}` : 'home'}>
+
                     <CSSTransition
                       key={location.pathname}
                       classNames="fade"
