@@ -44,7 +44,7 @@ const Home = () => {
 
         </div>
         <div className="what-is">
-          <div className="row">
+          <div className="sk-row-2">
             <div className="col-sm story-img">
               <img src={castle} />
             </div>
