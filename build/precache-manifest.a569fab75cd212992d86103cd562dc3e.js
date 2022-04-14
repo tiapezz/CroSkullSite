@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ea7dfbb00eab88802dc3",
-    "url": "/CroSkullSite/static/css/main.58224bcd.chunk.css"
+    "revision": "f5b373aaf5b5b5c6a770",
+    "url": "/CroSkullSite/static/css/main.bac02a8f.chunk.css"
   },
   {
-    "revision": "ea7dfbb00eab88802dc3",
-    "url": "/CroSkullSite/static/js/main.ea7dfbb0.chunk.js"
+    "revision": "f5b373aaf5b5b5c6a770",
+    "url": "/CroSkullSite/static/js/main.f5b373aa.chunk.js"
   },
   {
     "revision": "aba60c318ad29468fef2",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/tavern.04bfda9d.jpg"
   },
   {
-    "revision": "14f97e3ae0688d8842b70bbe4294c137",
-    "url": "/CroSkullSite/static/media/bonefire.14f97e3a.jpg"
-  },
-  {
     "revision": "1afe8f137c9a2c9c79dec927b864e831",
     "url": "/CroSkullSite/static/media/merchant.1afe8f13.png"
+  },
+  {
+    "revision": "14f97e3ae0688d8842b70bbe4294c137",
+    "url": "/CroSkullSite/static/media/bonefire.14f97e3a.jpg"
   },
   {
     "revision": "2f874a3d8a303f2a4612ae0b23f26ed3",
@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/skeleton-hand.ed73eddb.cur"
   },
   {
-    "revision": "edbc7d6811be091548a4136d8f2462e2",
+    "revision": "b3cea35c2db5f605d6fa8214351352db",
     "url": "/CroSkullSite/index.html"
   }
 ];
