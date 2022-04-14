@@ -162,7 +162,7 @@ margin: 0 auto;
 .story-text h2{
     font-family: 'Headhunter' !important;
     text-align: center;
-    font-size: 2em !important;
+    font-size: 2vh !important;
 }
 
 .story-img {
@@ -180,15 +180,19 @@ margin: 0 auto;
 }
 
 .carousel-content{
-    margin-top: 10%;
+margin: 10%;
+text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .carousel-content h2{
-    font-size: 5em !important;
+    font-size: 5vh !important;
     font-family: 'Headhunter' !important;
 }
 .carousel-content p{
-    font-size: 5em !important;
+    font-size: 2vh !important;
     font-family: 'Elite' !important;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 .s1{
     background-image: url(./Slider/tavern.jpg);
@@ -205,6 +209,7 @@ margin: 0 auto;
     background-size: cover;
     justify-items: center;
     height: 50vh;
+
 }
 .s3{
     background-image: url(./Slider/bg-marketplace.jpeg);
@@ -253,6 +258,11 @@ margin: 0 auto;
 
 .faq .card {
     border: 1px solid white !important;
+    font-family: 'Elite' !important;
+    font-size: 1.5vh !important;
+}
+.faq .card h5{
+    font-size: 2vh !important;
 }
 .faq .show{
     border-top: 1px solid white;

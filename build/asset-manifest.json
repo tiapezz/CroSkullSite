@@ -10,9 +10,9 @@
   "static/media/bg-bank.jpeg": "/CroSkullSite/static/media/bg-bank.70625c53.jpeg",
   "static/media/bg-marketplace.jpeg": "/CroSkullSite/static/media/bg-marketplace.2636d802.jpeg",
   "static/media/bg-raffle.jpeg": "/CroSkullSite/static/media/bg-raffle.851e5bda.jpeg",
+  "static/media/merchant.png": "/CroSkullSite/static/media/merchant.1afe8f13.png",
   "static/media/tavern.jpg": "/CroSkullSite/static/media/tavern.04bfda9d.jpg",
   "static/media/bonefire.jpg": "/CroSkullSite/static/media/bonefire.14f97e3a.jpg",
-  "static/media/merchant.png": "/CroSkullSite/static/media/merchant.1afe8f13.png",
   "static/media/bonesville_village.png": "/CroSkullSite/static/media/bonesville_village.2f874a3d.png",
   "static/media/bonesville_castle.png": "/CroSkullSite/static/media/bonesville_castle.ff0edab8.png",
   "static/media/moon.png": "/CroSkullSite/static/media/moon.0c685fe6.png",
@@ -34,6 +34,6 @@
   "static/media/App.css": "/CroSkullSite/static/media/skeleton-hand.ed73eddb.cur",
   "static/css/main.bac02a8f.chunk.css.map": "/CroSkullSite/static/css/main.bac02a8f.chunk.css.map",
   "index.html": "/CroSkullSite/index.html",
-  "precache-manifest.27d154d09a57912728668a6e962f60af.js": "/CroSkullSite/precache-manifest.27d154d09a57912728668a6e962f60af.js",
+  "precache-manifest.f6544ebf1dd1b7d8eb36d577c3b75a42.js": "/CroSkullSite/precache-manifest.f6544ebf1dd1b7d8eb36d577c3b75a42.js",
   "service-worker.js": "/CroSkullSite/service-worker.js"
 }

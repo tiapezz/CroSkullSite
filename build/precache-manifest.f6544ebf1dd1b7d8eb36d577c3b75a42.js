@@ -36,16 +36,16 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/bg-raffle.851e5bda.jpeg"
   },
   {
+    "revision": "1afe8f137c9a2c9c79dec927b864e831",
+    "url": "/CroSkullSite/static/media/merchant.1afe8f13.png"
+  },
+  {
     "revision": "04bfda9d13b9a3500a03c53532a17b60",
     "url": "/CroSkullSite/static/media/tavern.04bfda9d.jpg"
   },
   {
     "revision": "14f97e3ae0688d8842b70bbe4294c137",
     "url": "/CroSkullSite/static/media/bonefire.14f97e3a.jpg"
-  },
-  {
-    "revision": "1afe8f137c9a2c9c79dec927b864e831",
-    "url": "/CroSkullSite/static/media/merchant.1afe8f13.png"
   },
   {
     "revision": "2f874a3d8a303f2a4612ae0b23f26ed3",
@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/skeleton-hand.ed73eddb.cur"
   },
   {
-    "revision": "b3cea35c2db5f605d6fa8214351352db",
+    "revision": "09113bc1f64e5818999172a665212986",
     "url": "/CroSkullSite/index.html"
   }
 ];
