@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/tavern.04bfda9d.jpg"
   },
   {
-    "revision": "1afe8f137c9a2c9c79dec927b864e831",
-    "url": "/CroSkullSite/static/media/merchant.1afe8f13.png"
-  },
-  {
     "revision": "14f97e3ae0688d8842b70bbe4294c137",
     "url": "/CroSkullSite/static/media/bonefire.14f97e3a.jpg"
+  },
+  {
+    "revision": "1afe8f137c9a2c9c79dec927b864e831",
+    "url": "/CroSkullSite/static/media/merchant.1afe8f13.png"
   },
   {
     "revision": "2f874a3d8a303f2a4612ae0b23f26ed3",
