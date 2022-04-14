@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cce3b575feac756a2028",
-    "url": "/CroSkullSite/static/css/main.da753006.chunk.css"
+    "revision": "87c1059fea84a1050b6c",
+    "url": "/CroSkullSite/static/css/main.18f894c0.chunk.css"
   },
   {
-    "revision": "cce3b575feac756a2028",
-    "url": "/CroSkullSite/static/js/main.cce3b575.chunk.js"
+    "revision": "87c1059fea84a1050b6c",
+    "url": "/CroSkullSite/static/js/main.87c1059f.chunk.js"
   },
   {
     "revision": "aba60c318ad29468fef2",
@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/js/runtime~main.b48f67ea.js"
   },
   {
-    "revision": "70625c53937f9e9244123d43e82e7dd1",
-    "url": "/CroSkullSite/static/media/bg-bank.70625c53.jpeg"
-  },
-  {
     "revision": "2636d8026007fac87c10c4eeabb6beed",
     "url": "/CroSkullSite/static/media/bg-marketplace.2636d802.jpeg"
+  },
+  {
+    "revision": "70625c53937f9e9244123d43e82e7dd1",
+    "url": "/CroSkullSite/static/media/bg-bank.70625c53.jpeg"
   },
   {
     "revision": "851e5bda4563f312bbe215b2836bb627",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/merchant.1afe8f13.png"
   },
   {
-    "revision": "e91f4ee1fa3e86ac219fbfa0d175e774",
-    "url": "/CroSkullSite/static/media/special-elite.regular.e91f4ee1.ttf"
-  },
-  {
     "revision": "078337f9fadfbfecc66a6fc14c733432",
     "url": "/CroSkullSite/static/media/HeadhunterRegular-6Y1x.078337f9.ttf"
+  },
+  {
+    "revision": "e91f4ee1fa3e86ac219fbfa0d175e774",
+    "url": "/CroSkullSite/static/media/special-elite.regular.e91f4ee1.ttf"
   },
   {
     "revision": "2f874a3d8a303f2a4612ae0b23f26ed3",
@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/skeleton-hand.ed73eddb.cur"
   },
   {
-    "revision": "650962d5bf3f48ce955b9ff3825aa00a",
+    "revision": "b8290acbaf3870ab5c6709933be0750a",
     "url": "/CroSkullSite/index.html"
   }
 ];
