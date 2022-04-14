@@ -17,7 +17,7 @@ h5:hover{
     color: white !important;
 }
 .home h1{
-    font-size: 5em !important;
+    font-size: 5vh !important;
     font-family: 'Headhunter' !important;
     text-align: center;
 }
@@ -178,10 +178,7 @@ margin: 0 auto;
     margin: 10% 0 10% 0;
     font-family: 'Elite';
 }
-.what-we-have h1{
-    font-size: 5em !important;
-    font-family: 'Headhunter' !important;
-}
+
 .carousel-content{
     margin-top: 10%;
 }
@@ -253,11 +250,7 @@ margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.faq h1{
-    font-size: 5em !important;
-    font-family: 'Headhunter' !important;
-    text-align: center;
-}
+
 .faq .card {
     border: 1px solid white !important;
 }
@@ -269,11 +262,7 @@ margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.team h1{
-    font-size: 5em !important;
-    font-family: 'Headhunter' !important;
-    text-align: center;
-}
+
 @media screen and (max-width: 992px) {
     
 }

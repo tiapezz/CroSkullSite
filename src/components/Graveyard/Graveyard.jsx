@@ -368,9 +368,9 @@ const Graveyard = () => {
                                                                 {
                                                                     attribute.value.map((value, i) => {
                                                                         return (
-                                                                            <div className='checkbox'>
-                                                                                <input type="checkbox" id={attribute.name + '-' + value.name} name={attribute.name + '-' + value.name} onChange={() => addFilter(attribute.name, value.name)} />
-                                                                                <label for={attribute.name + '-' + value.name}> <AttributeMap value={value.name} /> <span>({value.cont})</span></label>
+                                                                            <div className='checkbox' key={attribute.name + '-' + value.name}>
+                                                                                <input type="checkbox"  id={attribute.name + '-' + value.name} name={attribute.name + '-' + value.name} onChange={() => addFilter(attribute.name, value.name)} />
+                                                                                <label > <AttributeMap value={value.name} /> <span>({value.cont})</span></label>
                                                                             </div>
                                                                         )
                                                                     })

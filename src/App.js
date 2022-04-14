@@ -10,7 +10,6 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar"
 
 import Graveyard from "./components/Graveyard/Graveyard";
-
 import "./App.css";
 
 let provider, contract, stakingContract, ethProvider;
