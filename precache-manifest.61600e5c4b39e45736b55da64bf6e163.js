@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f5b373aaf5b5b5c6a770",
-    "url": "/CroSkullSite/static/css/main.bac02a8f.chunk.css"
+    "revision": "cce3b575feac756a2028",
+    "url": "/CroSkullSite/static/css/main.da753006.chunk.css"
   },
   {
-    "revision": "f5b373aaf5b5b5c6a770",
-    "url": "/CroSkullSite/static/js/main.f5b373aa.chunk.js"
+    "revision": "cce3b575feac756a2028",
+    "url": "/CroSkullSite/static/js/main.cce3b575.chunk.js"
   },
   {
     "revision": "aba60c318ad29468fef2",
@@ -14,14 +14,6 @@ self.__precacheManifest = [
   {
     "revision": "b48f67ea0ac83f2dceb6",
     "url": "/CroSkullSite/static/js/runtime~main.b48f67ea.js"
-  },
-  {
-    "revision": "078337f9fadfbfecc66a6fc14c733432",
-    "url": "/CroSkullSite/static/media/HeadhunterRegular-6Y1x.078337f9.ttf"
-  },
-  {
-    "revision": "e91f4ee1fa3e86ac219fbfa0d175e774",
-    "url": "/CroSkullSite/static/media/special-elite.regular.e91f4ee1.ttf"
   },
   {
     "revision": "70625c53937f9e9244123d43e82e7dd1",
@@ -36,16 +28,24 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/bg-raffle.851e5bda.jpeg"
   },
   {
-    "revision": "1afe8f137c9a2c9c79dec927b864e831",
-    "url": "/CroSkullSite/static/media/merchant.1afe8f13.png"
-  },
-  {
     "revision": "04bfda9d13b9a3500a03c53532a17b60",
     "url": "/CroSkullSite/static/media/tavern.04bfda9d.jpg"
   },
   {
     "revision": "14f97e3ae0688d8842b70bbe4294c137",
     "url": "/CroSkullSite/static/media/bonefire.14f97e3a.jpg"
+  },
+  {
+    "revision": "1afe8f137c9a2c9c79dec927b864e831",
+    "url": "/CroSkullSite/static/media/merchant.1afe8f13.png"
+  },
+  {
+    "revision": "e91f4ee1fa3e86ac219fbfa0d175e774",
+    "url": "/CroSkullSite/static/media/special-elite.regular.e91f4ee1.ttf"
+  },
+  {
+    "revision": "078337f9fadfbfecc66a6fc14c733432",
+    "url": "/CroSkullSite/static/media/HeadhunterRegular-6Y1x.078337f9.ttf"
   },
   {
     "revision": "2f874a3d8a303f2a4612ae0b23f26ed3",
@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/CroSkullSite/static/media/skeleton-hand.ed73eddb.cur"
   },
   {
-    "revision": "09113bc1f64e5818999172a665212986",
+    "revision": "650962d5bf3f48ce955b9ff3825aa00a",
     "url": "/CroSkullSite/index.html"
   }
 ];
