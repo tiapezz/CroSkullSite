@@ -17,6 +17,7 @@ import grave from './grave.png'
 import cloud from './cloud.png'
 import roadmap from './roadmap.png';
 import logo from './logo.png';
+import gif from './croskullGif.gif';
 
 const ipfsUri128 = "https://croskull.mypinata.cloud/ipfs/QmZn1HvYE1o1J8LhNpxFTj5k8LQb2bWT49YvbrhB3r19Xx/"
 const ipfsUri480 = "https://croskull.mypinata.cloud/ipfs/QmWu9bKunKbv8Kkq8wEWGpCaW47oMBbH6ep4ZWBzAxHtgj/"
@@ -38,7 +39,7 @@ const Home = () => {
           <img src={grave} id='grave' />
           <div className="logo-div">
             <img src={logo} id='logo' />
-            <button id='underworld-btn'>Button</button>
+            <button id='underworld-btn'>Underworld</button>
           </div>
 
 
@@ -70,7 +71,7 @@ const Home = () => {
               A Croskull is not simply a PFP but is also the key to the insane Dr. Jiko’s laboratory experiments.
             </div>
             <div className="col-sm story-img"  >
-              <img src={village} />
+              <img src={gif} />
             </div>
           </div>
         </div>
@@ -82,7 +83,7 @@ const Home = () => {
               <div className="carousel-item active w-100 s1">
                 <div className="carousel-content">
                   <h2>Tavern</h2>
-                  <p>You can handle your croskull, can send them in Adventure, write their story, look at your inventory and even sell them.</p>
+                  <p>You can handle your croskull, send them in Adventure, write their story, look at your inventory and even sell them.</p>
                 </div>
 
               </div>

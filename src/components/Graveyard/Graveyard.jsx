@@ -293,7 +293,7 @@ const Graveyard = () => {
                                 </div>
                            </div>
                            
-                        <div className={'attribute-container row red2'}>
+                        <div className={'attribute-container row'}>
                                     {skullData.attributes.map(at => {
                                         return (
                                             <div className={'attribute attribute-'+skullData.attributes[0].value}>

@@ -44,8 +44,8 @@ h5:hover{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-top: 5%;
 }
-
 #header img{
     position: absolute;
     top: 0;
@@ -54,6 +54,7 @@ h5:hover{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    border-radius: 15px;
 }
 #header #moon{
     mix-blend-mode: screen;
@@ -172,16 +173,20 @@ margin: 0 auto;
 .story-img img{
     margin: auto !important;
     width: 50%;
+    border-radius: 15px;
 }
 .what-we-have{
     text-align: center;
     margin: 10% 0 10% 0;
     font-family: 'Elite';
 }
-
+.what-we-have h1{
+    margin-bottom: 3% !important;
+}
 .carousel-content{
 margin: 10%;
 text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+
 }
 .carousel-content h2{
     font-size: 5vh !important;
@@ -190,7 +195,7 @@ text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 .carousel-content p{
     font-size: 2vh !important;
     font-family: 'Elite' !important;
-
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -201,6 +206,7 @@ text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
     background-size: cover;
     justify-items: center;
     height: 50vh;
+    border-radius: 15px;
 }
 .s2{
     background-image: url(./Slider/bonefire.jpg);
@@ -209,7 +215,7 @@ text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
     background-size: cover;
     justify-items: center;
     height: 50vh;
-
+    border-radius: 15px;
 }
 .s3{
     background-image: url(./Slider/bg-marketplace.jpeg);
@@ -218,6 +224,7 @@ text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
     background-size: cover;
     justify-items: center;
     height: 50vh;
+    border-radius: 15px;
 }
 .s4{
     background-image: url(./Slider/merchant.png);
@@ -226,6 +233,7 @@ text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
     background-size: cover;
     justify-items: center;
     height: 50vh;
+    border-radius: 15px;
 }
 .s5{
     background-image: url(./Slider/bg-raffle.jpeg);
@@ -234,6 +242,7 @@ text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
     background-size: cover;
     justify-items: center;
     height: 50vh;
+    border-radius: 15px;
 }
 .s6{
     background-image: url(./Slider/bg-bank.jpeg);
@@ -242,11 +251,13 @@ text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
     background-size: cover;
     justify-items: center;
     height: 50vh;
+    border-radius: 15px;
 }
 
 .roadmap img{
     width: 100%;
     margin: 10% 0 10%;
+    border-radius: 15px;
 }
 .faq{
     width: 100%;
@@ -276,5 +287,7 @@ text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
     .sk-row-2{
         flex-direction: column-reverse;
     }
-    
+    .home{
+        padding-bottom: 5%;
+    }
 }

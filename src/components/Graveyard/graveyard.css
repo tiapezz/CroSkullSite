@@ -262,7 +262,19 @@ float: right;
   margin: 1%;
   margin-left: 1%;
   border-radius: 6px;
+  animation: skullCardAnimation 1s;
 }
+@keyframes skullCardAnimation {
+  0% {
+transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+
 .graveyard .skull-row .skull-card .skull-img{
   width: 100%;
   border-radius: 6px;
@@ -321,10 +333,7 @@ display: none;
 }
 
 .graveyard  .Red{
-  background-color: rgba(249, 77, 77, 0.836) ;
-}
-.graveyard  .Red2{
-  background-color: #f86e6e !important ;
+  background-color: #F94E4D ;
 }
 .graveyard .modal-container .modal-desc .attribute-Red{
  background-color: #f86e6e;
@@ -530,6 +539,9 @@ display: none;
   border-radius: 6px;
   flex-direction: row;
   display: flex;
+}
+.graveyard .div-clear{
+  display: block;
 }
     @keyframes slideInFromTop {
       0% {

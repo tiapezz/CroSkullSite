@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/CroSkullSite/precache-manifest.61600e5c4b39e45736b55da64bf6e163.js"
+  "/CroSkullSite/precache-manifest.4a139d207d12fad48786ff04bed831a7.js"
 );
 
 workbox.clientsClaim();
