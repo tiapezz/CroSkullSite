@@ -39,7 +39,7 @@ const Home = () => {
           <img src={grave} id='grave' />
           <div className="logo-div">
             <img src={logo} id='logo' />
-            <button id='underworld-btn'>Underworld</button>
+            <button id='underworld-btn' ><a href='https://app.croskull.com'>Underworld</a></button>
           </div>
 
 

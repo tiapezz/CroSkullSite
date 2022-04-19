@@ -25,16 +25,8 @@ h5:hover{
     width: 100% !important;
     max-width: 1268px;
 }
-#header {
-    /*
-    background-image: url(grave.png);
-    width: 100%;
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-items: center;
-    */
+#header a{
+    color: #000000 !important;
 }
 #header{
     position: relative;
