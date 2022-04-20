@@ -1,9 +1,9 @@
 {
   "name": "croskullsite",
   "version": "0.2.0",
-  "description": "CROSkull",
+  "description": "CROSkullSite",
   "author": "Jenky",
-  "homepage": "https://tiapezz.github.io/CroSkullSite/",
+  "homepage": "https://croskull.com/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
