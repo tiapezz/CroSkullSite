@@ -18,6 +18,7 @@ import cloud from './cloud.png'
 import roadmap from './roadmap.png';
 import logo from './logo.png';
 import gif from './croskullGif.gif';
+import prof from './Skelly_Prof.png'
 
 const ipfsUri128 = "https://croskull.mypinata.cloud/ipfs/QmZn1HvYE1o1J8LhNpxFTj5k8LQb2bWT49YvbrhB3r19Xx/"
 const ipfsUri480 = "https://croskull.mypinata.cloud/ipfs/QmWu9bKunKbv8Kkq8wEWGpCaW47oMBbH6ep4ZWBzAxHtgj/"
@@ -47,7 +48,7 @@ const Home = () => {
         <div className="what-is">
           <div className="sk-row-2">
             <div className="col-sm story-img">
-              <img src={castle} />
+              <img src={village} />
             </div>
             <div className="col-sm story-text" >
               <h2> What is CroSKull</h2>
@@ -57,7 +58,7 @@ const Home = () => {
               Just one person’s soul stands out across all the grey souls of the city…
               Dr. Jiko spends most of his time in his secret laboratory located inside the dark Bonesville Castle.
               After years of failure, he managed to improve his alchemical formula
-              By combining mysterious potions, he found a way to bring joy and life back to the city…
+              by combining mysterious potions, he found a way to bring joy and life back to the city…
               6,666 funny and crazy Croskulls are ready to invade the streets!
             </div>
           </div>
@@ -96,19 +97,19 @@ const Home = () => {
               <div className="carousel-item s3">
                 <div className="carousel-content">
                   <h2>Marketplace</h2>
-                  <p>This is a magic portal connected with Ebisu's Bay. You can look for a new croskull or for one of the 666 mystery potions dropped by DR Jiko and buy it!</p>
+                  <p>The portal to the Ebisu's bay marketplace. Looking for a new skull or one of the mysterious potions, drop by the marketplace and buy it!</p>
                 </div>
               </div>
               <div className="carousel-item s4">
               <div className="carousel-content">
                   <h2>Merchant</h2>
-                  <p>A new merchant that sell strange eggs appears near Bonesville: noone knows who he is or where he comes from, the only thing we know is that if he has enough coins he will bring new merch.</p>
+                  <p>A merchant will sell strange eggs acquired by the CroSkulls on their adventures exploring the different regions of the underworld. No one knows who he is or where he's from, the only thing we know is that the more he sells, the more wares you will have to choose from.</p>
                 </div>
               </div>
               <div className="carousel-item s5">
               <div className="carousel-content">
                   <h2>Raffle</h2>
-                  <p>Bonesville is famous for its raffle with great prizes. Join our raffle, the only thing you need is a bunch of Graves! BUT be careful DR. Jiko creates his own raffle, the crazy raffle. Don't miss out!</p>
+                  <p>Bonesville is famous for its raffles which include great prizes! Join our raffles, all you need is some Grave to participate. But be careful! Dr. Jiko sometimes will create some crazy raffles! Be quick to avoid missing out!</p>
                 </div>
               </div>
               <div className="carousel-item s6">
