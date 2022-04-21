@@ -1,10 +1,10 @@
 
-import React, { useEffect, useState  } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import store from "../../redux/store";
-import { loadAllSkull, resetSkullList, getEbisusLink, loadFilterSkull,getFilterSkullLenght,getAttributeNew,loadSkull, resetAttributeList,resetSkullsFilterLenght } from "../../redux/gallery/galleryAction";
+import { loadAllSkull, resetSkullList, getEbisusLink, loadFilterSkull, getFilterSkullLenght, getAttributeNew, loadSkull, resetAttributeList, resetSkullsFilterLenght } from "../../redux/gallery/galleryAction";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faFilter } from '@fortawesome/free-solid-svg-icons';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import './graveyard.css';
 import bgIcon from './Icon/bg.png';
 import bodyIcon from './Icon/body.png';
@@ -15,17 +15,19 @@ import hatIcon from './Icon/hat.png';
 import numberIcon from './Icon/number.png';
 import logoIcon from './Icon/logo-icon.png';
 import searchIcon from './Icon/search.png';
-import {  faPortrait, faStoreAlt, faPlus, faMinus,faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import { faPortrait, faStoreAlt, faPlus, faMinus, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import AttributeMap from '../AttributeMap/AttributeMap';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ipfsUri480 = "https://croskull.mypinata.cloud/ipfs/QmWu9bKunKbv8Kkq8wEWGpCaW47oMBbH6ep4ZWBzAxHtgj/"
+
 const ipfsUri = 'https://ipfs.io/ipfs/QmZA9idEBomqsYBvA9ZH5JzuirmyQ414UBaqBGaEk2w69x/'
 const Graveyard = () => {
     let dispatch = useDispatch();
 
     let { gallery } = store.getState();
     console.log(gallery);
-    let { skullsList, attributeList, ebisusLink,skullsFilterLenght=6666 } = gallery;
+    let { skullsList, attributeList, ebisusLink, skullsFilterLenght = 6666 } = gallery;
 
     let [filter, setFilter] = useState([
         { name: 'Background', value: [] },
@@ -47,18 +49,18 @@ const Graveyard = () => {
 
 
     useEffect(() => {
-        dispatch(loadFilterSkull(filter,0))
+        dispatch(loadFilterSkull(filter, 0))
         dispatch(getAttributeNew())
-        console.log(skullsList,attributeList,filter)
+        console.log(skullsList, attributeList, filter)
         return () => {
-            skullsList=null;
-            attributeList=null;
+            skullsList = null;
+            attributeList = null;
             dispatch(resetSkullList())
             dispatch(resetAttributeList())
             filter = null;
             setFilter(null);
             dispatch(resetSkullsFilterLenght());
-          };
+        };
     }, [])
 
 
@@ -69,7 +71,7 @@ const Graveyard = () => {
         setSkullModal(true);
         dispatch(getEbisusLink(croskull));
 
-        
+
     }
 
     function closeSkullModal() {
@@ -95,24 +97,23 @@ const Graveyard = () => {
     function loadSkullFilter() {
         dispatch(resetSkullList());
         dispatch(getFilterSkullLenght(filter))
-        if(checkVoidFilter())
-        {
+        if (checkVoidFilter()) {
             dispatch(loadAllSkull(0))
             setPage(0);
             skullsFilterLenght = 6666;
         }
-        else{
-            dispatch(loadFilterSkull(filter,page));
+        else {
+            dispatch(loadFilterSkull(filter, page));
         }
-        console.log('filtro: '+checkVoidFilter())
-        
+        console.log('filtro: ' + checkVoidFilter())
+
     }
 
     function checkVoidFilter() {
         let flag = true;
-        filter.map(at =>{
-            if(at.value.length !=0)
-            flag = false
+        filter.map(at => {
+            if (at.value.length != 0)
+                flag = false
         })
         return flag;
     }
@@ -182,22 +183,22 @@ const Graveyard = () => {
     }
 
     function clear() {
-        filter.map((f)=>{
-            f.value =[];
+        filter.map((f) => {
+            f.value = [];
         })
-        attributeList.map((attribute,i) =>{
-            attribute.value.map(value =>{
+        attributeList.map((attribute, i) => {
+            attribute.value.map(value => {
                 let s = document.getElementById(attribute.name + '-' + value.name);
                 console.log(s);
                 s.checked = false;
             })
-        
+
         })
         loadSkullFilter();
     }
 
     function chooseIcon(at) {
-        switch(at){
+        switch (at) {
             case 'Background':
                 return bgIcon;
             case 'Nose':
@@ -215,209 +216,208 @@ const Graveyard = () => {
         }
     }
 
-  
 
 
-    const listenScroll= (event) => {
+
+    const listenScroll = (event) => {
         let scrollValue = event.target.scrollTop;
         let dh = document.getElementById('skull-row').clientHeight
-        if(checkVoidFilter()){
+        if (checkVoidFilter()) {
             console.log('listen')
-            if(scrollValue > dh/100*60 && skullsListLength != skullsList.length && page<+66)
-            {
+            if (scrollValue > dh / 100 * 60 && skullsListLength != skullsList.length && page < +66) {
                 setSkullsListLength(skullsList.length);
-                setPage(page+1);
-                page=page+1
+                setPage(page + 1);
+                page = page + 1
                 dispatch(loadAllSkull(page))
                 console.log('qua')
             }
-        }else{
-            if(scrollValue > dh/100*60 && skullsListLength != skullsList.length )
-            {
+        } else {
+            if (scrollValue > dh / 100 * 60 && skullsListLength != skullsList.length) {
                 setSkullsListLength(skullsList.length);
-                setPage(page+1);
-                page=page+1
-                dispatch(loadFilterSkull(filter,page));
-                console.log('qua',skullsListLength,skullsList.length,page)
+                setPage(page + 1);
+                page = page + 1
+                dispatch(loadFilterSkull(filter, page));
+                console.log('qua', skullsListLength, skullsList.length, page)
             }
         }
     }
 
-    const openbar = () =>
-    {
-      document.getElementById("sidebar").style.width = "100%";
+    const openbar = () => {
+        document.getElementById("sidebar").style.width = "100%";
     }
-    const closebar = () =>
-    {
-      document.getElementById("sidebar").style.width = "0px";
+    const closebar = () => {
+        document.getElementById("sidebar").style.width = "0px";
     }
 
-    function searchById(event){
+    function searchById(event) {
         let n = event.target.value;
         console.log(event.target.value)
-        if(n)
-        {
+        if (n) {
             dispatch(loadSkull(n))
-        }else{
+        } else {
             loadSkullFilter()
         }
-        
+
     }
 
     return (
         <>
-            <div  className='skull-modal' hidden={!skullModal} onClick={() => { closeSkullModal() }}>
-            {
-                skullData != null ?
-                <>
-                <div className={'modal-container '+skullData.attributes[0].value} >
+            <div className='skull-modal' hidden={!skullModal} onClick={() => { closeSkullModal() }}>
+                {
+                    skullData != null ?
+                        <>
+                            <div className={'modal-container ' + skullData.attributes[0].value} >
 
-                        <div className='modal-img'>
-                        <img src={ipfsUri480+skullData.edition+'.webp'} />
-                        </div>
-                        <div className='modal-desc'>
-                            <div className='desc-header'>
-                                <div className='desc-title'>
-                                    <p>CroSkull</p> 
-                                    <h1>#{skullData.edition}</h1>
+                                <div className='modal-img'>
+                                    <LazyLoadImage
+                                        src={`${ipfsUri480}${skullData.edition}.webp`}
+                                    />
                                 </div>
-                                <div className='desc-icons'>
-                                  <a href={ipfsUri+skullData.edition+'.png'}> <FontAwesomeIcon icon={faPortrait} /></a> 
-                                  {
-                                      ebisusLink ?
-                                      <a href={ebisusLink}> <FontAwesomeIcon icon={faStoreAlt} /></a>
-                                      :
-                                      ''
-                                  }
-                                  
-                                </div>
-                           </div>
-                           
-                        <div className={'attribute-container row'}>
-                                    {skullData.attributes.map(at => {
-                                        return (
-                                            <div className={'attribute attribute-'+skullData.attributes[0].value}>
-                                                <div className='attribute-icon'>
-                                                    <img src={chooseIcon(at.trait_type)} />
-                                                </div>
-                                                <div className='attribute-desc'>
-                                                    <p className='type'>{at.trait_type}:</p>
-                                                    <p className='value'><AttributeMap value={at.value} /></p>
-                                                </div>
-                                            </div>
-                                        )
-                                    })}
-                                    <div className={'attribute attribute-'+skullData.attributes[0].value}>
-                                                <div className='attribute-icon'>
-                                                    <img src={chooseIcon('Trait')} />
-                                                </div>
-                                                <div className='attribute-desc'>
-                                                    <p className='type'>N. Trait:</p>
-                                                    <p className='value'>{skullData.attributes.length}</p>
-                                                </div>
-                                            </div>
-                                </div>
+                                <div className='modal-desc'>
+                                    <div className='desc-header'>
+                                        <div className='desc-title'>
+                                            <p>CroSkull</p>
+                                            <h1>#{skullData.edition}</h1>
+                                        </div>
+                                        <div className='desc-icons'>
+                                            <a href={ipfsUri + skullData.edition + '.png'}> <FontAwesomeIcon icon={faPortrait} /></a>
+                                            {
+                                                ebisusLink ?
+                                                    <a href={ebisusLink}> <FontAwesomeIcon icon={faStoreAlt} /></a>
+                                                    :
+                                                    ''
+                                            }
 
-                    </div>
-                    <img src={logoIcon} className='logo' />
-                </div>
-                </>
-                :
-                ''
-            }
+                                        </div>
+                                    </div>
+
+                                    <div className={'attribute-container row'}>
+                                        {skullData.attributes.map(at => {
+                                            return (
+                                                <div className={'attribute attribute-' + skullData.attributes[0].value}>
+                                                    <div className='attribute-icon'>
+                                                        <img src={chooseIcon(at.trait_type)} />
+                                                    </div>
+                                                    <div className='attribute-desc'>
+                                                        <p className='type'>{at.trait_type}:</p>
+                                                        <p className='value'><AttributeMap value={at.value} /></p>
+                                                    </div>
+                                                </div>
+                                            )
+                                        })}
+                                        <div className={'attribute attribute-' + skullData.attributes[0].value}>
+                                            <div className='attribute-icon'>
+                                                <img src={chooseIcon('Trait')} />
+                                            </div>
+                                            <div className='attribute-desc'>
+                                                <p className='type'>N. Trait:</p>
+                                                <p className='value'>{skullData.attributes.length}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <img src={logoIcon} className='logo' />
+                            </div>
+                        </>
+                        :
+                        ''
+                }
             </div>
 
 
             <div className='header'>
-            <h1 id='filter-header'>Filter <span id='clear-button' onClick={() => clear()}><FontAwesomeIcon icon={faWindowClose} /></span> </h1>
-            <div className='skull-header'>
+                <h1 id='filter-header'>Filter <span id='clear-button' onClick={() => clear()}><FontAwesomeIcon icon={faWindowClose} /></span> </h1>
+                <div className='skull-header'>
                     <h1>CROSKULLS<span>//{skullsFilterLenght}</span><span id='filter-button' onClick={() => openbar()}><FontAwesomeIcon icon={faFilter} /></span></h1>
                 </div>
             </div>
-        <div className='gallery-container'>
-            <div className='filter-container' id='sidebar'> 
-            <div className='filter-title'>
-                <h1>Filter <span id='filter-button' onClick={() => closebar()}><FontAwesomeIcon icon={faMinus} /></span></h1>
-            </div>
-                        <div className='filter-header'>
-                            <div className='filter-icon'>
-                                <img src={searchIcon} />
-                            </div>
-                            <div className='filter-name'>
-                                <input type='number' className='search-skull' placeholder='Search skull by id' onChange={searchById}></input>
-
-                            </div>
+            <div className='gallery-container'>
+                <div className='filter-container' id='sidebar'>
+                    <div className='filter-title'>
+                        <h1>Filter <span id='filter-button' onClick={() => closebar()}><FontAwesomeIcon icon={faMinus} /></span></h1>
+                    </div>
+                    <div className='filter-header'>
+                        <div className='filter-icon'>
+                            <img src={searchIcon} />
                         </div>
-                {
-                                            attributeList ?
-                                            attributeList.map((attribute, i) => {
-                                                    return (
-                                                        <div className='filter-box' key={'filter-box-' + i} id={'filter-box-' + i}>
-                                                            <div className='filter-header' onClick={() => ShowCheckbox(i)}>
-                                                                <div className='filter-icon'>
-                                                                    <img src={chooseIcon(attribute.name)} /> 
-                                                                </div>
-                                                                <div className='filter-name'>
-                                                                    <h1>{attribute.name}
-                                                                    <span> <FontAwesomeIcon icon={angleIconFilter[i] ? faMinus : faPlus} /></span>
-                                                                    </h1>
-                                                                    
-                                                                </div>
-                                                            </div>
-                                                            <div className='filter-checkbox' id={'filter-checkbox-' + i} hidden={!angleIconFilter[i]}>
-                                                                {
-                                                                    attribute.value.map((value, i) => {
-                                                                        return (
-                                                                            <div className='checkbox' key={attribute.name + '-' + value.name}>
-                                                                                <input type="checkbox"  id={attribute.name + '-' + value.name} name={attribute.name + '-' + value.name} onChange={() => addFilter(attribute.name, value.name)} />
-                                                                                <label > <AttributeMap value={value.name} /> <span>({value.cont})</span></label>
-                                                                            </div>
-                                                                        )
-                                                                    })
-                                                                }
-                                                            </div>
+                        <div className='filter-name'>
+                            <input type='number' className='search-skull' placeholder='Search skull by id' onChange={searchById}></input>
 
+                        </div>
+                    </div>
+                    {
+                        attributeList ?
+                            attributeList.map((attribute, i) => {
+                                return (
+                                    <div className='filter-box' key={'filter-box-' + i} id={'filter-box-' + i}>
+                                        <div className='filter-header' onClick={() => ShowCheckbox(i)}>
+                                            <div className='filter-icon'>
+                                                <img src={chooseIcon(attribute.name)} />
+                                            </div>
+                                            <div className='filter-name'>
+                                                <h1>{attribute.name}
+                                                    <span> <FontAwesomeIcon icon={angleIconFilter[i] ? faMinus : faPlus} /></span>
+                                                </h1>
+
+                                            </div>
+                                        </div>
+                                        <div className='filter-checkbox' id={'filter-checkbox-' + i} hidden={!angleIconFilter[i]}>
+                                            {
+                                                attribute.value.map((value, i) => {
+                                                    return (
+                                                        <div className='checkbox' key={attribute.name + '-' + value.name}>
+                                                            <input type="checkbox" id={attribute.name + '-' + value.name} name={attribute.name + '-' + value.name} onChange={() => addFilter(attribute.name, value.name)} />
+                                                            <label > <AttributeMap value={value.name} /> <span>({value.cont})</span></label>
                                                         </div>
                                                     )
-                                                }) : (<></>)
-                                        }
-                <div className='div-clear'>
-                    <button className='skull-button clear-button' onClick={() => clear()}>Clear</button>
-                </div>
-            </div>
-            <div className='skull-container' onScroll={listenScroll}>
+                                                })
+                                            }
+                                        </div>
 
-                <div className='filter-bar'>
-
-                </div>
-                <div className='skull-row row' id='skull-row'>
-                    {
-                        skullsList ? 
-                        (
-                            skullsList.map(skull =>{
-                                return(
-                                <div className='skull-card' key={skull.edition} onClick={() => openSkullModal(skull)}>
-                                    <div className='skull-img'>
-                                        <img src={ipfsUri480+skull.edition+'.webp'} />
                                     </div>
-                                    <div className='skull-desc'>
-                                        <p className='type'>CroSkull</p>
-                                        <p className='number'>NO. {skull.edition}</p>
-                                    </div>
-                                </div>
                                 )
-                            })
-
-                            ) :
-                            (
-                                <div>
-                                    Loading
-                                </div>
-                            )
+                            }) : (<></>)
                     }
+                    <div className='div-clear'>
+                        <button className='skull-button clear-button' onClick={() => clear()}>Clear</button>
+                    </div>
+                </div>
+                <div className='skull-container' onScroll={listenScroll}>
+
+                    <div className='filter-bar'>
+
+                    </div>
+                    <div className='skull-row row' id='skull-row'>
+                        {
+                            skullsList ?
+                                (
+                                    skullsList.map(skull => {
+                                        return (
+                                            <div className='skull-card' key={skull.edition} onClick={() => openSkullModal(skull)}>
+                                                <div className='skull-img'>
+                                                    <LazyLoadImage
+                                                        src={`${ipfsUri480}${skull.edition}.webp`}
+                                                    />
+                                                </div>
+                                                <div className='skull-desc'>
+                                                    <p className='type'>CroSkull</p>
+                                                    <p className='number'>NO. {skull.edition}</p>
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+
+                                ) :
+                                (
+                                    <div>
+                                        Loading
+                                    </div>
+                                )
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
 
         </ >
     )
