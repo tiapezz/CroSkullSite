@@ -10,10 +10,10 @@
     src: url('./special-elite.regular.ttf') format('truetype');
     font-weight: bold;
 }
-h5:hover{
+.home h5:hover{
     color: aliceblue;
 }
-.btn:hover{
+.home .btn:hover{
     color: white !important;
 }
 .home h1{
@@ -110,14 +110,14 @@ h5:hover{
         opacity: 1;
 	}
 }
-.logo-div{
+.home .logo-div{
     z-index: 99;
     position: relative;
     font-family: 'Headhunter';
     display: block;
     margin: 0 auto;
 }
-#underworld-btn {
+.home #underworld-btn {
     text-decoration: none;
     padding: 8px 30px;
     border-radius: 40px;
@@ -131,7 +131,7 @@ h5:hover{
     margin: 0 auto;
     animation: button-an 2s;
 }
-#header #logo{
+.home #header #logo{
 width: 30%;
 min-width: 300px;
 height: auto;
@@ -141,24 +141,24 @@ position: relative;
 margin: 0 auto;
 }
 
-.what-is div{
+.home .what-is div{
     margin-top: 5%;
 }
 
-.story-text {
+.home .story-text {
     font-family: 'Elite' !important;
     margin: auto !important;
     font-size: large;
     text-align: center;
     
 }
-.story-text h2{
+.home .story-text h2{
     font-family: 'Headhunter' !important;
     text-align: center;
     font-size: 4vh !important;
 }
 
-.story-img {
+.home .story-img {
     margin: auto !important;
     text-align: center;
 }

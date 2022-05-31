@@ -2,6 +2,7 @@ const initialState = {
     skullsList: null,
     attributeList: null,
     skullsFilterLenght: 6666,
+    evoList: null
 
 };
 

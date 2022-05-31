@@ -5,6 +5,7 @@ import store from "../store";
 
 
 
+
 const updateState = (payload) => {
     return {
         type: "UPDATE_STATE",
@@ -31,6 +32,18 @@ export const loadAllSkull = (page) => {
     }
 }
 
+export const loadEvoSkullMinted = () => {
+    return async (dispatch) => {
+        let { gallery } = store.getState()
+        const rawResult = await fetch( 'https://api.croskull.com/api/collections/get/evoskull' );
+        let rawList = await rawResult.json();
+
+        dispatch(updateState({
+            key: "evoList",
+            value: rawList.entries,
+        }))
+    }
+}
 export const loadFilterSkull = (filter,page) => {
     return async (dispatch) => {
         let { gallery } = store.getState()
@@ -91,7 +104,7 @@ function checkFilter(cr,filter) {
             {
                
                 if(f.value.includes(5))
-                {   console.log(5)
+                {  
                     cr.attributes.map(at => {
                         if (at.trait_type == 'Hat' && flag) {
                             if (at.value.includes('none'))
@@ -104,7 +117,6 @@ function checkFilter(cr,filter) {
                 }
                 if(f.value.includes(6))
                 {
-                    console.log(6)
                     cr.attributes.map(at => {
                         if (at.trait_type == 'Hat' && flag) {
                             if (at.value.includes('none'))
@@ -204,6 +216,25 @@ export const getEbisusLink= (skull) => {
         })
         dispatch(updateState({
             key: "ebisusLink",
+            value: linkGenerate
+        }))
+    }
+}
+
+export const getEbisusLinkEvo= (skull) => {
+    return async (dispatch) => {
+        let { gallery } = store.getState()
+        const rawResult = await (await fetch(`https://api.ebisusbay.com/listings?collection=0xbf4E430cD0ce8b93d4760958fe4ae66cDaCDB6c6`)).json();
+        let skullsList = await rawResult.listings;
+        const link = 'https://app.ebisusbay.com/listing/';
+        let linkGenerate = null;
+        
+        skullsList.map(s =>{
+            if(s.nftId == skull.metadata.edition )
+                linkGenerate = link+s.listingId
+        })
+        dispatch(updateState({
+            key: "evoLink",
             value: linkGenerate
         }))
     }

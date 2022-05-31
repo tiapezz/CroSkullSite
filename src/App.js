@@ -43,7 +43,7 @@ class App extends Component {
               <Navbar />
               <Route
                 render={({ location }) => (
-                  <TransitionGroup className={location.pathname != '/' ? `container-fluid2 ${location.pathname.replace('/', '')}` : 'home'}>
+                  <TransitionGroup className={location.pathname != '/' ? `container-fluid2 ${location.pathname.replace('/', '')}` : 'home'} id={location.pathname != '/' ? `${location.pathname.replace('/', '')}` : 'home'}>
 
                     <CSSTransition
                       key={location.pathname}
