@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f6bed24269f500c316fb",
+    "revision": "83d06463d35d7be8f0e6",
     "url": "/static/css/main.a2ac0999.chunk.css"
   },
   {
-    "revision": "f6bed24269f500c316fb",
-    "url": "/static/js/main.f6bed242.chunk.js"
+    "revision": "83d06463d35d7be8f0e6",
+    "url": "/static/js/main.83d06463.chunk.js"
   },
   {
     "revision": "74f25262e5f1219dfab0",
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/static/media/special-elite.regular.e91f4ee1.ttf"
   },
   {
-    "revision": "2636d8026007fac87c10c4eeabb6beed",
-    "url": "/static/media/bg-marketplace.2636d802.jpeg"
-  },
-  {
     "revision": "70625c53937f9e9244123d43e82e7dd1",
     "url": "/static/media/bg-bank.70625c53.jpeg"
+  },
+  {
+    "revision": "2636d8026007fac87c10c4eeabb6beed",
+    "url": "/static/media/bg-marketplace.2636d802.jpeg"
   },
   {
     "revision": "851e5bda4563f312bbe215b2836bb627",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/static/media/skeleton-hand.ed73eddb.cur"
   },
   {
-    "revision": "3e2f03ec209940fbb7fe8f63cc4a52c0",
+    "revision": "78a36718c44843930086a91072b2d292",
     "url": "/index.html"
   }
 ];
