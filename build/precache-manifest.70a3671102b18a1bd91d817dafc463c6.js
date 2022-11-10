@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/static/media/special-elite.regular.e91f4ee1.ttf"
   },
   {
-    "revision": "70625c53937f9e9244123d43e82e7dd1",
-    "url": "/static/media/bg-bank.70625c53.jpeg"
-  },
-  {
     "revision": "851e5bda4563f312bbe215b2836bb627",
     "url": "/static/media/bg-raffle.851e5bda.jpeg"
+  },
+  {
+    "revision": "70625c53937f9e9244123d43e82e7dd1",
+    "url": "/static/media/bg-bank.70625c53.jpeg"
   },
   {
     "revision": "2636d8026007fac87c10c4eeabb6beed",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/static/media/tavern.04bfda9d.jpg"
   },
   {
-    "revision": "1afe8f137c9a2c9c79dec927b864e831",
-    "url": "/static/media/merchant.1afe8f13.png"
-  },
-  {
     "revision": "14f97e3ae0688d8842b70bbe4294c137",
     "url": "/static/media/bonefire.14f97e3a.jpg"
+  },
+  {
+    "revision": "1afe8f137c9a2c9c79dec927b864e831",
+    "url": "/static/media/merchant.1afe8f13.png"
   },
   {
     "revision": "b0d2b69913284e116404908e26940f08",
