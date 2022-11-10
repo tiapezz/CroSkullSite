@@ -16,6 +16,14 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
+    "revision": "078337f9fadfbfecc66a6fc14c733432",
+    "url": "/static/media/HeadhunterRegular-6Y1x.078337f9.ttf"
+  },
+  {
+    "revision": "e91f4ee1fa3e86ac219fbfa0d175e774",
+    "url": "/static/media/special-elite.regular.e91f4ee1.ttf"
+  },
+  {
     "revision": "70625c53937f9e9244123d43e82e7dd1",
     "url": "/static/media/bg-bank.70625c53.jpeg"
   },
@@ -26,14 +34,6 @@ self.__precacheManifest = [
   {
     "revision": "2636d8026007fac87c10c4eeabb6beed",
     "url": "/static/media/bg-marketplace.2636d802.jpeg"
-  },
-  {
-    "revision": "078337f9fadfbfecc66a6fc14c733432",
-    "url": "/static/media/HeadhunterRegular-6Y1x.078337f9.ttf"
-  },
-  {
-    "revision": "e91f4ee1fa3e86ac219fbfa0d175e774",
-    "url": "/static/media/special-elite.regular.e91f4ee1.ttf"
   },
   {
     "revision": "04bfda9d13b9a3500a03c53532a17b60",
