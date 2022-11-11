@@ -28,24 +28,24 @@ self.__precacheManifest = [
     "url": "/static/media/bg-bank.70625c53.jpeg"
   },
   {
-    "revision": "2636d8026007fac87c10c4eeabb6beed",
-    "url": "/static/media/bg-marketplace.2636d802.jpeg"
-  },
-  {
     "revision": "851e5bda4563f312bbe215b2836bb627",
     "url": "/static/media/bg-raffle.851e5bda.jpeg"
+  },
+  {
+    "revision": "2636d8026007fac87c10c4eeabb6beed",
+    "url": "/static/media/bg-marketplace.2636d802.jpeg"
   },
   {
     "revision": "04bfda9d13b9a3500a03c53532a17b60",
     "url": "/static/media/tavern.04bfda9d.jpg"
   },
   {
-    "revision": "14f97e3ae0688d8842b70bbe4294c137",
-    "url": "/static/media/bonefire.14f97e3a.jpg"
-  },
-  {
     "revision": "1afe8f137c9a2c9c79dec927b864e831",
     "url": "/static/media/merchant.1afe8f13.png"
+  },
+  {
+    "revision": "14f97e3ae0688d8842b70bbe4294c137",
+    "url": "/static/media/bonefire.14f97e3a.jpg"
   },
   {
     "revision": "b0d2b69913284e116404908e26940f08",
