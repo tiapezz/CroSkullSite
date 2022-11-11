@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "41a007b8c74acb58ea46",
+    "revision": "e40adf34b76e167de90d",
     "url": "/static/css/main.7214066c.chunk.css"
   },
   {
-    "revision": "41a007b8c74acb58ea46",
-    "url": "/static/js/main.41a007b8.chunk.js"
+    "revision": "e40adf34b76e167de90d",
+    "url": "/static/js/main.e40adf34.chunk.js"
   },
   {
     "revision": "dd9ceb4f28a0889d8bdd",
@@ -16,18 +16,6 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "078337f9fadfbfecc66a6fc14c733432",
-    "url": "/static/media/HeadhunterRegular-6Y1x.078337f9.ttf"
-  },
-  {
-    "revision": "e91f4ee1fa3e86ac219fbfa0d175e774",
-    "url": "/static/media/special-elite.regular.e91f4ee1.ttf"
-  },
-  {
-    "revision": "2636d8026007fac87c10c4eeabb6beed",
-    "url": "/static/media/bg-marketplace.2636d802.jpeg"
-  },
-  {
     "revision": "70625c53937f9e9244123d43e82e7dd1",
     "url": "/static/media/bg-bank.70625c53.jpeg"
   },
@@ -36,16 +24,28 @@ self.__precacheManifest = [
     "url": "/static/media/bg-raffle.851e5bda.jpeg"
   },
   {
+    "revision": "2636d8026007fac87c10c4eeabb6beed",
+    "url": "/static/media/bg-marketplace.2636d802.jpeg"
+  },
+  {
+    "revision": "078337f9fadfbfecc66a6fc14c733432",
+    "url": "/static/media/HeadhunterRegular-6Y1x.078337f9.ttf"
+  },
+  {
+    "revision": "e91f4ee1fa3e86ac219fbfa0d175e774",
+    "url": "/static/media/special-elite.regular.e91f4ee1.ttf"
+  },
+  {
     "revision": "04bfda9d13b9a3500a03c53532a17b60",
     "url": "/static/media/tavern.04bfda9d.jpg"
   },
   {
-    "revision": "1afe8f137c9a2c9c79dec927b864e831",
-    "url": "/static/media/merchant.1afe8f13.png"
-  },
-  {
     "revision": "14f97e3ae0688d8842b70bbe4294c137",
     "url": "/static/media/bonefire.14f97e3a.jpg"
+  },
+  {
+    "revision": "1afe8f137c9a2c9c79dec927b864e831",
+    "url": "/static/media/merchant.1afe8f13.png"
   },
   {
     "revision": "b0d2b69913284e116404908e26940f08",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/static/media/skeleton-hand.ed73eddb.cur"
   },
   {
-    "revision": "cd9f643cce0e8379e449dbe1202e69e0",
+    "revision": "21b951e0e5c208933a860b84d34c92cb",
     "url": "/index.html"
   }
 ];
