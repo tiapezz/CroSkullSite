@@ -56,7 +56,7 @@ const Home = () => {
               Many elderly people leave their homes just to carry out duties or run errands, whereas the few children who have never played with each other do not know what fun is.
               At Bonesville, everything is sad, gloomy, melancholic, still.
               Just one person’s soul stands out across all the grey souls of the city…
-              Dr. Jiko spends most of his time in his secret laboratory located inside the dark Bonesville Castle.
+              Dr. Skully spends most of his time in his secret laboratory located inside the dark Bonesville Castle.
               After years of failure, he managed to improve his alchemical formula
               by combining mysterious potions, he found a way to bring joy and life back to the city…
               6,666 funny and crazy Croskulls are ready to invade the streets!
@@ -69,7 +69,7 @@ const Home = () => {
 
               Each Croskull NFT is based on 6 attributes with different rarities.
 
-              A Croskull is not simply a PFP but is also the key to the insane Dr. Jiko’s laboratory experiments.
+              A Croskull is not simply a PFP but is also the key to the insane Dr. Skully’s laboratory experiments.
             </div>
             <div className="col-sm story-img"  >
               <img src={gif} />
@@ -109,7 +109,7 @@ const Home = () => {
               <div className="carousel-item s5">
               <div className="carousel-content">
                   <h2>Raffle</h2>
-                  <p>Bonesville is famous for its raffles which include great prizes! Join our raffles, all you need is some Grave to participate. But be careful! Dr. Jiko sometimes will create some crazy raffles! Be quick to avoid missing out!</p>
+                  <p>Bonesville is famous for its raffles which include great prizes! Join our raffles, all you need is some Grave to participate. But be careful! Dr. Skully sometimes will create some crazy raffles! Be quick to avoid missing out!</p>
                 </div>
               </div>
               <div className="carousel-item s6">
@@ -146,7 +146,7 @@ const Home = () => {
               </div>
               <div id="collapseOne" className="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                 <div className="card-body">
-                The CroSkull is a collection of 6.666 uniquely generated NFTs stored in the Cronos Chain. Each CroSkull NFT is based on 6+ attributes with different rarities. A CroSkull is not simply a PFP but is also the key to the insane Dr. Jiko’s laboratory experiments.
+                The CroSkull is a collection of 6.666 uniquely generated NFTs stored in the Cronos Chain. Each CroSkull NFT is based on 6+ attributes with different rarities. A CroSkull is not simply a PFP but is also the key to the insane Dr. Skully’s laboratory experiments.
                 </div>
               </div>
             </div>
