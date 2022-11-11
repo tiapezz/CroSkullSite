@@ -11,8 +11,8 @@
   "static/media/bg-marketplace.jpeg": "/static/media/bg-marketplace.2636d802.jpeg",
   "static/media/bg-raffle.jpeg": "/static/media/bg-raffle.851e5bda.jpeg",
   "static/media/tavern.jpg": "/static/media/tavern.04bfda9d.jpg",
-  "static/media/bonefire.jpg": "/static/media/bonefire.14f97e3a.jpg",
   "static/media/merchant.png": "/static/media/merchant.1afe8f13.png",
+  "static/media/bonefire.jpg": "/static/media/bonefire.14f97e3a.jpg",
   "static/media/logo-icon.png": "/static/media/logo-icon.b0d2b699.png",
   "static/media/bonesville_village.png": "/static/media/bonesville_village.2f874a3d.png",
   "static/media/moon.png": "/static/media/moon.0c685fe6.png",
@@ -36,6 +36,6 @@
   "static/media/App.css": "/static/media/skeleton-hand.ed73eddb.cur",
   "static/css/main.7214066c.chunk.css.map": "/static/css/main.7214066c.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.33847bcc7d4fc08145c516c6fc2828ee.js": "/precache-manifest.33847bcc7d4fc08145c516c6fc2828ee.js",
+  "precache-manifest.d9a028b813c6fd34734476123e68544c.js": "/precache-manifest.d9a028b813c6fd34734476123e68544c.js",
   "service-worker.js": "/service-worker.js"
 }

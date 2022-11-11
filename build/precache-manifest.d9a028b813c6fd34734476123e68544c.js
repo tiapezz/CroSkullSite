@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/static/media/tavern.04bfda9d.jpg"
   },
   {
-    "revision": "14f97e3ae0688d8842b70bbe4294c137",
-    "url": "/static/media/bonefire.14f97e3a.jpg"
-  },
-  {
     "revision": "1afe8f137c9a2c9c79dec927b864e831",
     "url": "/static/media/merchant.1afe8f13.png"
+  },
+  {
+    "revision": "14f97e3ae0688d8842b70bbe4294c137",
+    "url": "/static/media/bonefire.14f97e3a.jpg"
   },
   {
     "revision": "b0d2b69913284e116404908e26940f08",
