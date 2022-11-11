@@ -14,11 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-<<<<<<< HEAD
   "/precache-manifest.33847bcc7d4fc08145c516c6fc2828ee.js"
-=======
-  "/precache-manifest.96ef7c6276fd0feb823350fb63063572.js"
->>>>>>> parent of 4aecd57b (Revert "cose")
 );
 
 workbox.clientsClaim();

@@ -1,6 +1,5 @@
 self.__precacheManifest = [
   {
-<<<<<<<< HEAD:build/precache-manifest.33847bcc7d4fc08145c516c6fc2828ee.js
     "revision": "41a007b8c74acb58ea46",
     "url": "/static/css/main.7214066c.chunk.css"
   },
@@ -11,18 +10,6 @@ self.__precacheManifest = [
   {
     "revision": "dd9ceb4f28a0889d8bdd",
     "url": "/static/js/1.dd9ceb4f.chunk.js"
-========
-    "revision": "6cf511e4f993188344bf",
-    "url": "/static/css/main.beae45d7.chunk.css"
-  },
-  {
-    "revision": "6cf511e4f993188344bf",
-    "url": "/static/js/main.6cf511e4.chunk.js"
-  },
-  {
-    "revision": "7f95292968ea64ca24a6",
-    "url": "/static/js/1.7f952929.chunk.js"
->>>>>>>> parent of 4aecd57b (Revert "cose"):build/precache-manifest.96ef7c6276fd0feb823350fb63063572.js
   },
   {
     "revision": "229c360febb4351a89df",
@@ -145,11 +132,7 @@ self.__precacheManifest = [
     "url": "/static/media/skeleton-hand.ed73eddb.cur"
   },
   {
-<<<<<<<< HEAD:build/precache-manifest.33847bcc7d4fc08145c516c6fc2828ee.js
     "revision": "cd9f643cce0e8379e449dbe1202e69e0",
-========
-    "revision": "af8f0df9b0b126a68c31e0bf537a5853",
->>>>>>>> parent of 4aecd57b (Revert "cose"):build/precache-manifest.96ef7c6276fd0feb823350fb63063572.js
     "url": "/index.html"
   }
 ];
