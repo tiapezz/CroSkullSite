@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/static/media/special-elite.regular.e91f4ee1.ttf"
   },
   {
-    "revision": "70625c53937f9e9244123d43e82e7dd1",
-    "url": "/static/media/bg-bank.70625c53.jpeg"
-  },
-  {
     "revision": "2636d8026007fac87c10c4eeabb6beed",
     "url": "/static/media/bg-marketplace.2636d802.jpeg"
   },
   {
     "revision": "851e5bda4563f312bbe215b2836bb627",
     "url": "/static/media/bg-raffle.851e5bda.jpeg"
+  },
+  {
+    "revision": "70625c53937f9e9244123d43e82e7dd1",
+    "url": "/static/media/bg-bank.70625c53.jpeg"
   },
   {
     "revision": "04bfda9d13b9a3500a03c53532a17b60",
